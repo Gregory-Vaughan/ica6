@@ -54,16 +54,23 @@ class MyHomePage extends StatelessWidget {
 
   Color getBackgroundColor(int age) {
     if (age <= 12) return Colors.lightBlueAccent;
+    if (age <= 19) return Colors.purpleAccent;
+    if (age <= 30) return Colors.greenAccent;
+    if (age <= 50) return Colors.orangeAccent;
     return Colors.redAccent;
   }
 
   String getMilestoneMessage(int age) {
     if (age <= 12) return "You're a child!";
+    if (age <= 19) return "Teenage years!";
+    if (age <= 30) return "Young adult!";
+    if (age <= 50) return "Mature and thriving!";
     return "Golden years!";
   }
 
   Color getProgressBarColor(int age) {
-    if (age <= 50) return Colors.green;
+    if (age <= 33) return Colors.green;
+    if (age <= 67) return Colors.yellow;
     return Colors.red;
   }
 
